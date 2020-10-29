@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@media only screen and (max-width: 600px) {
+    .teacher-container {
+        width: 100vw;
+        height: 100vh;
+        padding: 5px 20px 0 20px;
+        margin: 0px auto 20px auto;
+        background-color: #EFF0F2;
+    }
+
+    .header {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+        background-color: var(--color-primary);
+        margin-left: -20px;
+        margin-right: -20px;
+        height: 7rem;
+    }
+
+    .header h1 {
+        color: var(--color-text-in-primary);
+        font-family: Righteous;
+    }
+
+    .teacher-container .main {
+        background-color: #EFF0F2;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-top: -5px;
+    }
+
+    .teacher-container .main .profilePic {
+        width: 100%;
+        position: relative;
+        height: 300px;
+        object-fit: cover;
+     }
+
+    .teacher-container .teacherItem {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        background-color: #FFF;
+        border-radius: 20px;
+        padding: 10px 20px;
+        position: relative;
+    }
+
+    .teacher-container .teacherItem strong {
+        font-family: Archivo;
+        font-size: 18px;
+        color: #13131a;
+    }
+
+    .teacher-container .teacherItem p {
+        font-size: 17px;
+        color: #444;
+    }
+
+    .teacher-container .teacherItem .infoGroup {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .teacher-container .teacherItem .teacherGroup p {
+        text-align: start;
+    }
+
+    .teacher-container .contact {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-top: -15px;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .teacher-container .contact p {
+        color: #000;
+    }
+
+    .buttons-container {
+        display: flex;
+        justify-content: center;
+        margin: 3.2rem 0;
+    }
+    
+    .buttons-container a {
+        width: 30rem;
+        height: 10.4rem;
+        border-radius: 20px;
+        font: 700 2.0rem Poppins;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        text-decoration: none;
+        color: var(--color-button-text);
+    
+        transition: background-color 0.2s;
+    }
+    
+    .buttons-container a:first-child {
+        margin-right: 1.6rem;
+    }
+    
+    .buttons-container a img {
+        width: 4rem;
+    }
+    
+    .buttons-container a.study {
+        background: var(--color-primary-lighter);
+    }
+    
+    .buttons-container a.give-classes {
+        background: var(--color-secundary);
+    }
+    
+    .buttons-container a.study:hover {
+        background: var(--color-primary-light);
+    }
+    
+    .buttons-container a.give-classes:hover {
+        background: var(--color-secundary-dark);
+    }
+    
+    .buttons-container a img {
+        margin-right: 2.4rem;
+        width: 40px;
+    }
+
+    .modal {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        height: 80%;
+        width: 100%;
+        background-color: teal;
+    }
+
+    .modalArea {
+        display: flex;
+        flex-direction: column;
+    }
+}
